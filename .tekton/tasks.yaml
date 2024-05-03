@@ -1,0 +1,8 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name : cleanup
+spec:
+  description: This task will clean up the workspace by deleting all the files
+  workspaces:
+    - name: source
